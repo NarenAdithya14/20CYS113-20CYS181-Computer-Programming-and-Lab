@@ -1,26 +1,18 @@
 #include<stdio.h>
-int main()
-{
-	int n,p;
-	printf("enter the number to check if it is prime or not");
-        scanf("%d",&n);
-	p=0;
-	for (int i=2;i<n;i=i+1)
-	{
-		if(n%i==0)
-		{
-			p=1;
-                        break;
-		}
+#include<math.h>
+int main(){
+	int a,b,c;
+	printf("ENTER THE NUMBER1");
+	scanf("%d",&c);
+	for(a=2;a<sqrt(c);a++){
+	if (c%a==0){
+	b=1;break;}
 	}
-	if (p==0)
-	{ 
-		printf("its a prime");
+	if(b==1){
+		printf("THE NUMBER IS NOT A PRIME");
 	}
-	else
-	{
-		printf("it is not a prime");
-	}
+	else {
+	printf("The number is  prime");}
 	return 0;
-}
+	}
 
